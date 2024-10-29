@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Design Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Banner Section -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Discover the Latest in Fashion</h1>
+            <p>Explore unique styles and exclusive designs curated just for you.</p>
+        </div>
+        <button onclick="scrollToSection('popular')">See Popular Designs</button>
+    </div>
+</section>
+
+
+
+    <!-- Popular Designs Section -->
+    <section id="popular">
+        <h2>Popular Designs</h2>
+        <div class="design-grid">
+            <div class="design-card">
+                <img src="/Users/anant/Downloads/ai agency/website_making/images/design5.png" alt="Design 1">
+                <h3>Modern Elegance</h3>
+                <p>Experience the elegance of minimalistic modern design.</p>
+            </div>
+            <div class="design-card">
+                <img src="/Users/anant/Downloads/ai agency/website_making/images/design6.png" alt="Design 2">
+                <h3>Street Style</h3>
+                <p>Embrace the bold and edgy fashion inspired by street culture.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="/Users/anant/Downloads/ai agency/website_making/images/design1.png" alt="Gallery Item 1"></div>
+            <div class="gallery-item"><img src="/Users/anant/Downloads/ai agency/website_making/images/design2.png" alt="Gallery Item 2"></div>
+            <div class="gallery-item"><img src="/Users/anant/Downloads/ai agency/website_making/images/design3.png" alt="Gallery Item 3"></div>
+            <div class="gallery-item"><img src="/Users/anant/Downloads/ai agency/website_making/images/design4.png" alt="Gallery Item 4"></div>
+        </div>
+    </section>
+
+    <!-- Floating Chatbot -->
+    <div id="chatbot-container">
+        <div id="chatbot-header" onclick="toggleChat()">Chat with us!</div>
+        <div id="chatbox">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

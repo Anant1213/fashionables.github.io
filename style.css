@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Banner */
+#hero {
+    background: url('/Users/anant/Downloads/ai agency/website_making/images/design5.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+/* Centered Content within Hero Section */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Hero Text Styling */
+.hero-text {
+    margin-bottom: 20px; /* Adds space between text and button */
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+/* Floating Button in Hero Section */
+#hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Popular Designs Section */
+#popular {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.design-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.design-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.design-card img {
+    width: 100%;
+    height: auto;
+}
+
+.design-card h3 {
+    margin: 10px;
+}
+
+.design-card p {
+    margin: 10px;
+    color: #555;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Chatbot Floating Container */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Chatbot Header Bar */
+#chatbot-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+#chatbox {
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 10px 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.user-message {
+    background-color: #e0f7fa;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f8e9;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#userInput {
+    width: calc(100% - 60px);
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
