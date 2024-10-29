@@ -9,10 +9,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Hero Banner */
+/* Hero Banner Section */
 #hero {
-    background: url('/Users/anant/Downloads/ai agency/website_making/images/design5.png') no-repeat center center/cover;
-    height: 100vh;
+    background: url('images/design5.png') no-repeat center center/cover; /* Full background image */
+    height: 100vh; /* Full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
